@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{%block title%}
+Calculo del precio
+{% endblock%}
+
+{%block content%}
+<h2> Precio segun knn: {{precio1}} </h2>
+<h2> Precio segun LinearRegresion: {{precio2}} </h2>
+<h2> Precio segun DecisionTree: {{precio3}} </h2>
+<h2> Precio segun RandomForest: {{precio4}} </h2>
+<h2> Precio segun Keras RN: {{precio5}} </h2>
+{% endblock%}

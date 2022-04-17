@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{% block title  %} Formulario{% endblock  %}}
+
+{% block content %} 
+    Introduzca los datos de su vehiculo
+    <form method ="post" action = "/precio/">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type = "submit", name ="save">Calcular</button>
+        
+    </form>
+{% endblock  %}
